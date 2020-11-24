@@ -4,8 +4,8 @@
 #' @return A ggplot2 object
 #' @export
 #' @examples
-#' plot_growth()
-plot_growth <- function(kittens = purrfectdata::kitten_growth){
+#' plot_kitten_growth()
+plot_kitten_growth <- function(kittens = purrfectdata::kitten_growth){
   ggplot2::ggplot(data = kittens,
                   ggplot2::aes_string(x = "datetime", y = "mass", group = "name", color = "name")) +
     ggplot2::geom_point(size = 1) +
